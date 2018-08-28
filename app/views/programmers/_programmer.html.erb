@@ -12,13 +12,15 @@
 
   <div class="col-md-9 programmer-info">
 
+    <p>
+    <strong>Home Country:</strong> <%= programmer.home_country %><br>
+    </p>
 
+    
 
-    <%= render partial: 'attribute', locals: {programmer: programmer, attribute: programmer.home_country, string: "Home Country:"} %>
-    <%= render partial: 'attribute', locals: {programmer: programmer, attribute: programmer.quote, string: "Quote:"} %>
-    <%= render partial: 'attribute', locals: {programmer: programmer, attribute: programmer.claim_to_fame, string: "Claim To Fame:"} %>
-
-
+    <p>
+    <strong>Quote:</strong> <%= programmer.quote %><br>
+    </p>
 
     <p>
     <strong>Claim To Fame:</strong> <%= programmer.claim_to_fame %>
