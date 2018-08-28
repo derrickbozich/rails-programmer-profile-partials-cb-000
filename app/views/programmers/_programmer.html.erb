@@ -14,9 +14,10 @@
 
     <%= render partial: 'programmers/attribute', locals:{programmer: programmer, attribute: programmer.send(:home_country), string: "Home Country:" } %>
     <%= render partial: 'programmers/attribute', locals:{programmer: programmer, attribute: programmer.send(:quote), string: "Quote:" } %>
+    <%= render partial: 'programmers/attribute', locals:{programmer: programmer, attribute: programmer.send(:claim_to_fame), string: "Claim To Fame:" } %>
 
 
-  
+
 
     <p>
     <strong>Claim To Fame:</strong> <%= programmer.claim_to_fame %>
