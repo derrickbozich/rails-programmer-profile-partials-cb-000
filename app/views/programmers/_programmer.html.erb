@@ -13,6 +13,7 @@
   <div class="col-md-9 programmer-info">
 
     <%= render partial: 'programmers/attribute', locals:{programmer: programmer, attribute: programmer.send(:home_country), string: "Home Country:" } %>
+    <%= render partial: 'programmers/attribute', locals:{programmer: programmer, attribute: programmer.send(:quote), string: "Quote:" } %>
 
 
     <p>
